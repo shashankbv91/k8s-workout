@@ -1,0 +1,51 @@
+{
+    "nodegroup": {
+        "nodegroupName": "AppNode1",
+        "nodegroupArn": "arn:aws:eks:us-east-1:537656207057:nodegroup/AppCluster/AppNode1/96c44c44-709d-8ab1-20f9-716cb91f9878",
+        "clusterName": "AppCluster",
+        "version": "1.27",
+        "releaseVersion": "1.27.1-20230526",
+        "createdAt": "2023-06-08T06:34:48.589000+05:30",
+        "modifiedAt": "2023-06-08T08:45:14.127000+05:30",
+        "status": "ACTIVE",
+        "capacityType": "ON_DEMAND",
+        "scalingConfig": {
+            "minSize": 3,
+            "maxSize": 5,
+            "desiredSize": 4
+        },
+        "instanceTypes": [
+            "t3.medium"
+        ],
+        "subnets": [
+            "subnet-0737e02c317b3f742",
+            "subnet-0147f4a9a3e4f3026",
+            "subnet-06e814572556f00e8"
+        ],
+        "remoteAccess": {
+            "ec2SshKey": "eks-ec2",
+            "sourceSecurityGroups": [
+                "sg-0119b9510d5144b30"
+            ]
+        },
+        "amiType": "AL2_x86_64",
+        "nodeRole": "arn:aws:iam::537656207057:role/LabRole",
+        "labels": {},
+        "resources": {
+            "autoScalingGroups": [
+                {
+                    "name": "eks-AppNode1-96c44c44-709d-8ab1-20f9-716cb91f9878"
+                }
+            ],
+            "remoteAccessSecurityGroup": "sg-0ca1e80c230e0b5da"
+        },
+        "diskSize": 20,
+        "health": {
+            "issues": []
+        },
+        "updateConfig": {
+            "maxUnavailable": 1
+        },
+        "tags": {}
+    }
+}
